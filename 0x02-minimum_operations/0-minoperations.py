@@ -16,7 +16,7 @@ def minOperations(n):
     while n % 2 == 0:
         factors_sum += 2
         n //= 2
-    for i in range(3, int(n ** 0.5), 2):
+    for i in range(3, int(n ** 0.5)  + 1, 2):
         while n % i == 0:
             factors_sum += i
             n //= i
