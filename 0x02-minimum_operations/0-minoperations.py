@@ -10,7 +10,7 @@ def minOperations(n):
     '''
     returns sum of prime factors
     '''
-    if n == 0 or n == 1 or isinstance(n, complex):
+    if n <= 1:
         return 0
     factors_sum = 0
     while n % 2 == 0:
