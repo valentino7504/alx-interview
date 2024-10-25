@@ -34,8 +34,8 @@ if __name__ == "__main__":
 
     try:
         for line in sys.stdin:
-            line_count += 1
             if reg.match(line):
+                line_count += 1
                 data = line.split()
                 status_code = data[-2]
                 code_stats[status_code] += 1
