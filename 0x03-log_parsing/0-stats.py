@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     def print_stats() -> None:
         '''prints current stats'''
-        print('File size: {}'.format(file_size))
+        print('File size: {:d}'.format(file_size))
         for code, calls in sorted(code_stats.items()):
             if calls:
                 print('{}: {}'.format(code, calls))
