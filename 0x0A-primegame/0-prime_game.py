@@ -33,6 +33,10 @@ def get_winner(num: int) -> int:
 
 def isWinner(x, nums):
     '''determines the winner of the set of prime games'''
+    if x <= 0 or nums is None:
+        return None
+    if x != len(nums):
+        return None
     winners = ('Ben', 'Mary')
     win_count = {'Ben': 0, 'Mary': 0}
     for i in range(x):
