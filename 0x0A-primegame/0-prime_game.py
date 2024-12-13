@@ -37,11 +37,11 @@ def isWinner(x, nums):
         return None
     if x != len(nums):
         return None
-    winners = ('Ben', 'Mary')
-    win_count = {'Ben': 0, 'Mary': 0}
+    winners = ('Ben', 'Maria')
+    win_count = {'Ben': 0, 'Maria': 0}
     for i in range(x):
         win_idx = get_winner(nums[i])
         win_count[winners[win_idx]] += 1
-    if win_count['Mary'] == win_count['Ben']:
+    if win_count['Maria'] == win_count['Ben']:
         return None
-    return 'Mary' if win_count['Mary'] > win_count['Ben'] else 'Ben'
+    return 'Maria' if win_count['Maria'] > win_count['Ben'] else 'Ben'
